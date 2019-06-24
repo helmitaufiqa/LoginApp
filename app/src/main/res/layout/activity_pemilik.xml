@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PemilikActivity"
+    android:layout_marginTop="20dp">
+
+    <LinearLayout
+        android:id="@+id/linearPemilik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemilik Laundri"
+            android:textSize="22sp"
+            android:textColor="@color/textViewColor"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+
+
+        <EditText
+            android:id="@+id/etAlamatEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_edit_text_grey"
+            android:hint="Alamat Email"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/etKataSandi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_edit_text_grey"
+            android:hint="Kata Sandi"
+            android:padding="10dp"/>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lupa Kata Sandi?"
+                android:textSize="18sp"
+                android:textColor="@color/textViewColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Klik disini"
+                android:textSize="18sp"
+                android:textColor="@color/mainColor"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonKembali"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_edit_text_grey"
+                android:text="kembali"
+                android:textSize="20sp"
+                android:textColor="@color/editTextGrey"/>
+
+            <Button
+                android:id="@+id/buttonMasuk"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:text="masuk"
+                android:textSize="20sp"
+                android:textColor="@color/textButtonColor"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_button"
+            android:text="Belum punya akun? daftar disini"
+            android:textSize="20sp"
+            android:textColor="@color/textButtonColor"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
